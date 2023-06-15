@@ -1,0 +1,12 @@
+# MySQL Shell
+  - shell.connect({host: 'localhost', port: 3306, user: 'root'})
+  - \sql
+  - SHOW DATABASES;
+
+# PostgreSQL (SQL Shell/ psql)
+  - Server [localhost]: <default, hit enter>
+  - Database [postgres]: <default, hit enter>
+  - Port [5432]: <default, hit enter>
+  - Username [postgres]: <default, hit enter>
+  - Password for user postgres: <enter password>
+  - SELECT 'Hello World';

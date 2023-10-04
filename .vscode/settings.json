@@ -1,8 +1,20 @@
 {
+  // Extensions
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "sqltools.autoOpenSessionFiles": false,
+
+  // IDE Config
   "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "sqltools.autoOpenSessionFiles": false,
+
+  // Languages
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+
+  // Database Configuration (SQL Tools)
   "sqltools.connections": [
     {
       "mysqlOptions": {

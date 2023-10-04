@@ -25,7 +25,7 @@
       "port": 3306,
       "driver": "MySQL",
       "name": "mysql",
-      "database": "default",
+      "database": "talently",
       "username": "root",
       "askForPassword": true
     },
@@ -35,7 +35,7 @@
       "port": 5432,
       "driver": "PostgreSQL",
       "name": "postgresql",
-      "database": "default",
+      "database": "talently",
       "username": "postgres",
       "askForPassword": true
     }

@@ -1,1 +1,1 @@
-CREATE TABLE users(full_name VARCHAR(255));
+CREATE TABLE users(full_name VARCHAR(255), yearly_salary INT);

@@ -1,1 +1,1 @@
-CREATE TABLE users();
+CREATE TABLE users(full_name VARCHAR(255));

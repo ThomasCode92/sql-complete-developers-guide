@@ -1,0 +1,5 @@
+# Example Database
+
+For this exercise, the MySQL RDBMS is used.
+The 'relations' database (created in the data folder) will be used.
+Make sure to drop the tables before running the sql commands in this folder.

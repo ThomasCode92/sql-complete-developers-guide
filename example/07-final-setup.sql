@@ -22,8 +22,8 @@ CREATE TABLE employees (
   last_name VARCHAR(300) NOT NULL,
   birthday DATE NOT NULL,  
   email VARCHAR(200) UNIQUE NOT NULL,
-  team_id INT DEFAULT 1,
-  FOREIGN KEY (team_id) REFERENCES teams (id) ON DELETE SET DEFAULT 
+  team_id INT,
+  FOREIGN KEY (team_id) REFERENCES teams (id) ON DELETE SET NULL
 );
 
 CREATE TABLE intranet_accounts (

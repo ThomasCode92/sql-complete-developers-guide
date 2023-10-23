@@ -1,0 +1,5 @@
+# Database
+
+For this section, the MySQL RDBMS is used.
+The 'relations' database (created in section 3) will be used.
+Make sure to drop the tables before running the sql commands in the data folder.

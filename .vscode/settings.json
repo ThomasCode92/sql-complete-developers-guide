@@ -26,7 +26,7 @@
       "port": 3306,
       "driver": "MySQL",
       "name": "mysql",
-      "database": "default",
+      "database": "restaurants",
       "username": "root",
       "askForPassword": true
     },
@@ -36,7 +36,7 @@
       "port": 5432,
       "driver": "PostgreSQL",
       "name": "postgresql",
-      "database": "default",
+      "database": "restaurants",
       "username": "postgres",
       "askForPassword": true
     }

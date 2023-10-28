@@ -1,0 +1,4 @@
+# Database
+
+The 'gym' database (created in section 6) will be used.
+Make sure run the commands to create the tables and insert data.

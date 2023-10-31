@@ -1,7 +1,7 @@
 CREATE TABLE events (
-  id,
-  name,
-  date_planned,
+  id INT,
+  name VARCHAR(255),
+  date_planned TIMESTAMP,
   image,
   description,
   max_participants,

@@ -1,5 +1,6 @@
 CREATE TABLE events (
-  id INT,
+  id INT PRIMARY KEY AUTO_INCREMENT, -- MySQL syntax
+  -- id SERIAL PRIMARY KEY, --PostgreSQL syntax
   name VARCHAR(255) CHECK (LENGTH(name) > 5) NOT NULL,
   date_planned TIMESTAMP NOT NULL,
   image VARCHAR(255),

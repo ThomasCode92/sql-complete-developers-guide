@@ -10,8 +10,8 @@ CREATE TABLE locations (
   house_number VARCHAR(10) NOT NULL,
   postal_code VARCHAR(5) NOT NULL,
   city_name VARCHAR(255), -- MySQL syntax
-  FOREIGN KEY (city_name) REFERENCES cities (name) -- MySQL syntax
-  -- city_name VARCHAR(200) REFERENCES cities --PostgreSQL syntax
+  FOREIGN KEY (city_name) REFERENCES cities (name) ON DELETE RESTRICT ON UPDATE CASCADE -- MySQL syntax
+  -- city_name VARCHAR(200) REFERENCES cities ON DELETE RESTRICT ON UPDATE CASCADE --PostgreSQL syntax
 );
 
 CREATE TABLE events (
@@ -24,6 +24,6 @@ CREATE TABLE events (
   max_participants INT CHECK (max_participants > 0),
   min_age INT CHECK (min_age > 0),
   location_id INT, -- MySQL syntax
-  FOREIGN KEY (location_id) REFERENCES locations (id) -- MySQL syntax
-  -- location_id INT REFERENCES locations --PostgreSQL syntax
+  FOREIGN KEY (location_id) REFERENCES locations (id) ON DELETE CASCADE -- MySQL syntax
+  -- location_id INT REFERENCES locations ON DELETE CASCADE --PostgreSQL syntax
 );

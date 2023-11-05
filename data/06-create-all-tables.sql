@@ -50,3 +50,23 @@ CREATE TABLE events (
   -- location_id INT REFERENCES locations ON DELETE CASCADE, --PostgreSQL syntax
   -- organizer_id INT REFERENCES organizers ON DELETE CASCADE --PostgreSQL syntax
 );
+
+CREATE TABLE events_users (
+  event_id INT, -- MySQL syntax
+  user_id INT, -- MySQL syntax
+  FOREIGN KEY (event_id) REFERENCES events (id) ON DELETE CASCADE, -- MySQL syntax
+  FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE, -- MySQL syntax
+  -- event_id INT REFERENCES events ON DELETE CASCADE, --PostgreSQL syntax
+  -- user_id INT REFERENCES users ON DELETE CASCADE, --PostgreSQL syntax
+  PRIMARY KEY (event_id, user_id)
+);
+
+CREATE TABLE events_tags (
+  event_id INT, -- MySQL syntax
+  tag_name VARCHAR(100), -- MySQL syntax
+  FOREIGN KEY (event_id) REFERENCES events (id) ON DELETE CASCADE, -- MySQL syntax
+  FOREIGN KEY (tag_name) REFERENCES tags (name) ON DELETE CASCADE, -- MySQL syntax
+  -- event_id INT REFERENCES events ON DELETE CASCADE, --PostgreSQL syntax
+  -- tag_name VARCHAR(100) REFERENCES tags ON DELETE CASCADE, --PostgreSQL syntax
+  PRIMARY KEY (event_id, tag_name)
+);
